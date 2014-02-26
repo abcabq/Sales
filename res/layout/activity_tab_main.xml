@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_bg"
+    android:id="@android:id/tabhost" >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	<include layout="@layout/nav_view"/>
+    	<RelativeLayout    	    
+        	android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    	    <FrameLayout 
+	            android:id="@android:id/tabcontent"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	    		android:layout_height="match_parent">
+	            
+	        </FrameLayout>
+	        <TabWidget 
+	            android:id="@android:id/tabs"
+	        	android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	            android:visibility="gone"
+	            android:layout_weight="0">
+	            
+	        </TabWidget>
+	        <LinearLayout
+	            android:orientation="horizontal" 
+	            android:layout_alignParentBottom="true"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            <ImageView 
+	                android:id="@+id/work"
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	          		android:src="@drawable/tab_icon_work_selected"/>
+	            <ImageView 
+	                android:id="@+id/attendance"
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	          		android:src="@drawable/tab_icon_attendance"/>
+	            <ImageView 
+	                android:id="@+id/reciprocal"
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	          		android:src="@drawable/tab_icon_reciprocal"/>
+	            <ImageView 
+	                android:id="@+id/setup"
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	          		android:src="@drawable/tab_icon_setup"/>
+	        </LinearLayout>
+    	</RelativeLayout>
+        
+    </LinearLayout>
+
+</TabHost>

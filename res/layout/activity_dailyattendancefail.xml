@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/nav_view"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="异常原因"
+	    android:textSize="15sp"
+	    android:layout_marginTop="10dip"
+	    android:layout_marginLeft="15dip"
+	    android:textColor="#fe752d"/>
+	<EditText 
+	    android:id="@+id/dailyattendance_fail_result"
+	    android:background="@drawable/dailyattendance_fail_bg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:lines="6"
+	    android:gravity="top"
+	    android:hint="请填写原因"
+	    android:padding="5dip"
+	    android:textSize="15sp"
+	    android:layout_margin="10dip"/>
+	<ImageView 
+	    android:id="@+id/dailyattendance_fail_camera"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_margin="10dip"/>
+	<TextView 
+	    android:id="@+id/dailyattendance_fail_commit"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/dialog_ok"
+		android:layout_margin="20dip"
+		android:paddingTop="10dip"
+		android:paddingBottom="10dip"
+		android:text="提  交"
+		android:textSize="18sp"
+		android:gravity="center"
+		android:textColor="@android:color/white" />
+</LinearLayout>

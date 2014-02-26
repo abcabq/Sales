@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_bg"
+    android:orientation="vertical" >
+   	<include layout="@layout/nav_view"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_pager"
+        android:layout_weight="1"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_gravity="center">
+        
+    </android.support.v4.view.ViewPager>
+	<LinearLayout
+        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/work"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+      		android:src="@drawable/tab_icon_work"/>
+        <ImageView 
+            android:id="@+id/attendance"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+      		android:src="@drawable/tab_icon_attendance"/>
+        <ImageView 
+            android:id="@+id/reciprocal"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+      		android:src="@drawable/tab_icon_reciprocal"/>
+        <ImageView 
+            android:id="@+id/setup"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+      		android:src="@drawable/tab_icon_setup"/>
+    </LinearLayout>
+</LinearLayout>

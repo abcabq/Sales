@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/nav_view"/>
+    <RelativeLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	<RelativeLayout 
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    	    <com.renyu.sales.myview.MyMapView 
+		        android:id="@+id/mapView"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:clickable="true" />
+    	    <RelativeLayout 
+    	        android:id="@+id/no_mapView"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:background="@android:color/white" >
+    	        <ImageView 
+    	            android:src="@drawable/no_map"
+    	            android:layout_centerInParent="true"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"/>
+    	        <TextView 
+    	            android:textSize="22sp"
+    	            android:id="@+id/no_map_tip"
+    	            android:paddingTop="200dip"
+    	            android:layout_centerInParent="true"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"/>
+    	    </RelativeLayout>
+    	</RelativeLayout>
+	    <RelativeLayout 	        
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+	        android:background="@drawable/map_top_bg">
+	        <ImageView 
+	            android:id="@+id/show_map_button"
+	            android:src="@drawable/show_map_sel"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginLeft="5dip"
+	            android:layout_marginRight="15dip"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>	        
+	        <TextView 
+	            android:id="@+id/local_pos"
+	            android:layout_toLeftOf="@id/show_map_button"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:padding="10dip"
+				android:text="正在定位中。。。"
+				android:textColor="@android:color/white" />
+	    </RelativeLayout>
+        
+        <LinearLayout 
+            android:id="@+id/upload_local"
+            android:orientation="horizontal"
+            android:background="@drawable/map_down_bg"
+            android:padding="8dip"
+            android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+            <TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:background="@drawable/dialog_ok"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+				android:textSize="18sp"
+				android:text="提交位置"
+				android:gravity="center"
+				android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

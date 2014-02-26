@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginTop="8dip"
+	    android:layout_marginLeft="5dip"
+	    android:layout_marginRight="5dip"
+	    android:paddingTop="5dip"
+	    android:paddingBottom="5dip"
+	   	android:background="@drawable/info_bg" >
+	   	<TextView 
+	       	android:id="@+id/announcement_title"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:layout_marginLeft="10dip"/>
+		<TextView 
+	       	android:id="@+id/announcement_name"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_marginTop="3dip"
+			android:layout_marginLeft="10dip"/>
+		<RelativeLayout 		    
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dip">
+		    <TextView 
+		       	android:id="@+id/announcement_date"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dip"/>		    
+			<TextView 
+		       	android:id="@+id/announcement_type"
+		       	android:layout_toLeftOf="@id/announcement_date"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:layout_marginRight="15dip"/>
+		</RelativeLayout>
+		
+	</LinearLayout>
+</LinearLayout>

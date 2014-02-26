@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/nav_view"/>
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <include layout="@layout/nav_view"/>
+	    <SurfaceView
+	        android:id="@+id/camera_surfaceview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"/>
+		<RelativeLayout 
+	        android:background="@drawable/map_down_bg"
+	        android:padding="8dip"
+	        android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+	        <TextView 
+	            android:id="@+id/camera_cancel"
+				android:layout_width="100dip" 
+				android:layout_height="wrap_content"
+				android:padding="10dip"
+				android:layout_marginLeft="5dip"
+				android:background="@drawable/dialog_no"
+				android:textSize="18sp"
+				android:text="取消"
+				android:gravity="center"
+				android:textColor="@android:color/white" />
+	        <TextView 
+	            android:id="@+id/camera_ok"
+				android:layout_width="100dip" 
+				android:layout_height="wrap_content"
+				android:padding="10dip"
+				android:layout_marginRight="5dip"
+				android:background="@drawable/dialog_ok"
+				android:layout_alignParentRight="true"
+				android:textSize="18sp"
+				android:text="确定"
+				android:gravity="center"
+				android:textColor="@android:color/white" />
+	     </RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

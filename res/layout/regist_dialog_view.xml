@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.renyu.sales.myview.MyRelativityLayout         
+        android:id="@+id/dialog_view_comp"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:background="#b0000000" >
+	    <RelativeLayout 
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/confirm_dialog_bg2"
+	        android:orientation="vertical"
+        	android:layout_width="250dip"
+			android:layout_height="210dip">
+	        <ImageView 
+	            android:id="@+id/confirm_dialog_successful_icon"
+	            android:src="@drawable/confirm_dialog_successful_icon"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="20dip"
+        		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	        <TextView 
+	            android:layout_below="@id/confirm_dialog_successful_icon"
+	            android:text="已注册"
+	            android:layout_marginTop="10dip"
+	            android:layout_centerHorizontal="true"
+        		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:textColor="@android:color/darker_gray"/>
+	        <TextView 
+	            android:id="@+id/dialog_view_return"
+	            android:background="@drawable/btn_style_alert_dialog_button_pressed"
+	            android:layout_centerHorizontal="true"
+	            android:textColor="@android:color/white"
+	            android:textSize="18sp"
+	            android:gravity="center"
+	            android:layout_alignParentBottom="true"   
+	            android:layout_marginBottom="5dip" 	            
+        		android:layout_width="150dip"
+				android:layout_height="wrap_content"
+	            android:text="返回登陆"/>
+	    </RelativeLayout>
+	</com.renyu.sales.myview.MyRelativityLayout>
+	<com.renyu.sales.myview.MyRelativityLayout                
+	    android:id="@+id/dialog_view_load"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:background="#b0000000" >
+        <ProgressBar 
+      		android:layout_width="100dip"
+  			android:layout_height="100dip"
+  			android:layout_centerInParent="true"
+       		android:indeterminateDrawable="@drawable/progress_dialog"/>
+	</com.renyu.sales.myview.MyRelativityLayout>
+
+</RelativeLayout>

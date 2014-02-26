@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navbar_bg">
+    <ImageView 
+        android:id="@+id/nav_back"
+        android:layout_centerVertical="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dip"
+    	android:src="@drawable/navbar_btn_back_bg_sel"/>
+	<ImageView 
+	    android:id="@+id/nav_title"
+	    android:layout_marginLeft="10dip"
+	    android:layout_centerInParent="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/work_title"/>
+	<ImageView 
+	    android:layout_toLeftOf="@id/nav_title"
+	    android:layout_centerInParent="true"
+	    android:src="@drawable/work_logo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+	
+	<ImageView 
+	    android:id="@+id/nav_right_image"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="15dip"
+	    android:visibility="invisible"
+	    android:src="@drawable/refresh_sel"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+	<ProgressBar 
+	    android:id="@+id/nav_right_pb"
+   		android:layout_width="20dip"
+		android:layout_height="20dip"
+	    android:visibility="invisible"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="15dip"
+   		android:indeterminateDrawable="@drawable/refresh_dialog"/>
+</RelativeLayout>
